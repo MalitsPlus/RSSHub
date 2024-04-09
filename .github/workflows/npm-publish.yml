@@ -6,7 +6,7 @@ on:
       - master
     paths:
       - '.github/workflows/npm-publish.yml'
-      - 'lib/**'
+      # - 'lib/**'
 
 permissions:
   contents: read

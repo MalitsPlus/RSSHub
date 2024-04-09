@@ -2,11 +2,11 @@ name: Build assets
 
 on:
   workflow_dispatch:
-  push:
-    branches:
-      - master
-    paths:
-      - 'lib/**/*.ts'
+  # push:
+  #   branches:
+  #     - master
+  #   paths:
+  #     - 'lib/**/*.ts'
 
 permissions:
   contents: read

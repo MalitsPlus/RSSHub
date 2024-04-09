@@ -1,14 +1,14 @@
 name: 'Docker Release'
 
 on:
-  push:
-    branches:
-      - master
-    paths:
-      - '.github/workflows/docker-release.yml'
-      - 'lib/**'
-      - '!lib/**/*.test.ts'
-      - 'Dockerfile'
+  # push:
+  #   branches:
+  #     - master
+  #   paths:
+  #     - '.github/workflows/docker-release.yml'
+  #     - 'lib/**'
+  #     - '!lib/**/*.test.ts'
+  #     - 'Dockerfile'
   workflow_dispatch: {}
 
 jobs:

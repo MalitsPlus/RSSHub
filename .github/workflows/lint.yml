@@ -4,7 +4,7 @@ name: Linter
 # pull_request includes [opened, reopened, synchronize] events by default
 # 'edited' is required for title-lint
 on:
-  push: {}
+  # push: {}
   pull_request:
     types: [opened, reopened, synchronize, edited]
   pull_request_target:

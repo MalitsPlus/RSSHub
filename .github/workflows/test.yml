@@ -1,14 +1,14 @@
 name: Test
 
 on:
-  push:
-    branches-ignore:
-      - 'dependabot/**'
-    paths:
-      - 'lib/**'
-      - 'package.json'
-      - 'pnpm-lock.yaml'
-      - '.github/workflows/test.yml'
+  # push:
+  #   branches-ignore:
+  #     - 'dependabot/**'
+  #   paths:
+  #     - 'lib/**'
+  #     - 'package.json'
+  #     - 'pnpm-lock.yaml'
+  #     - '.github/workflows/test.yml'
   pull_request: {}
 
 permissions:
