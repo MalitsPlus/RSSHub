@@ -1,11 +1,11 @@
-name: 'Docker Release'
+name: 'V - Docker Release'
 
 on:
   push:
     branches:
       - master
     paths:
-      - '.github/workflows/docker-release.yml'
+      - '.github/workflows/docker-release-v.yml'
       - 'lib/**'
       - '!lib/**/*.test.ts'
       - 'Dockerfile'
