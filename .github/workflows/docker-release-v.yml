@@ -9,11 +9,11 @@ on:
       - 'lib/**'
       - '!lib/**/*.test.ts'
       - 'Dockerfile'
-  workflow_run:
-    workflows: [Upstream Sync]
-    types: [completed]
-    branches:
-      - master
+  # workflow_run:
+  #   workflows: [Upstream Sync]
+  #   types: [completed]
+  #   branches:
+  #     - master
   workflow_dispatch: {}
 
 jobs:
