@@ -13,12 +13,14 @@ async function handler() {
         },
     });
     const data = JSON.parse(response.substring('artist_news('.length, response.length - 1));
-    const items = data.items.map((item) => ({
-        title: item.title,
-        link: new URL(item.link, baseUrl).toString(),
-        pubDate: parseDate(item.date),
-        description: item.article.replaceAll('&nbsp;', ' '),
-    }));
+    const items = data.items.map((item) => {
+        return {
+            title: item.title,
+            link: new URL(item.link, baseUrl).toString(),
+            pubDate: parseDate(item.date),
+            description: item.article.replaceAll('&nbsp;', ' ').replaceAll('\r\n', '<br/>'),
+        };
+    });
 
     return {
         // channel title
